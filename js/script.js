@@ -18,6 +18,13 @@ function calculateTriangleArea() {
 function calculateRectArea() {
   const widthRect = getInputArea('rect-width');
   const lengthhRect = getInputArea('rect-length');
+
+  //   Validate Input: width & Length
+  if (isNaN(widthRect) || isNaN(lengthhRect)) {
+    alert('insert a number');
+    return;
+  }
+
   const area = widthRect * lengthhRect;
   setAreaText('rect-area', area);
 
@@ -28,6 +35,13 @@ function calculateRectArea() {
 function calculateParallelogram() {
   const base = getInputArea('parall-base');
   const height = getInputArea('parall-height');
+
+  //   Validate Input: width & Length
+  if (isNaN(base) || isNaN(height)) {
+    alert('insert a number');
+    return;
+  }
+
   const area = base * height;
   setAreaText('parall-area', area);
 
@@ -38,6 +52,13 @@ function calculateParallelogram() {
 function calculateRhombus() {
   const d1 = getInputArea('rhumb-d1');
   const d2 = getInputArea('rhumb-d2');
+
+  //   Validate Input: width & Length
+  if (isNaN(d1) || isNaN(d2)) {
+    alert('insert a number');
+    return;
+  }
+
   const area = 0.5 * d1 * d2;
   setAreaText('rhumbus-area', area);
 
@@ -48,6 +69,13 @@ function calculateRhombus() {
 function calculatePentagon() {
   const p = getInputArea('Pentagon-p');
   const b = getInputArea('Pentagon-b');
+
+  //   Validate Input: width & Length
+  if (isNaN(p) || isNaN(b)) {
+    alert('insert a number');
+    return;
+  }
+
   const area = 0.5 * p * b;
   setAreaText('Pentagon-area', area);
 
@@ -58,6 +86,13 @@ function calculatePentagon() {
 function calculateEllipse() {
   const a = getInputArea('pi-a');
   const b = getInputArea('pi-b');
+
+  //   Validate Input: width & Length
+  if (isNaN(a) || isNaN(b)) {
+    alert('insert a number');
+    return;
+  }
+
   const area = (3.14 * a * b).toFixed(2);
   setAreaText('Ellipse-area', area);
 
