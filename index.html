@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light"></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Genious</title>
+    <!-- Tailwind & Daisy CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+  <main class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 my-10">
+    <div class="flex flex-col md:flex-row gap-8">
+      <!-- 1st part -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- 1st card start -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
+        <div class="card-body text-center">
+          <h2 class="text-center text-2xl font-bold">Triangle</h2>
+          <p>Area (A) = 0.5 * b * h</p>
+          <p>
+            <input class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="b">
+            <span class="mr-2">cm</span>
+            <input class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="h">
+            <span>cm</span>
+          </p>
+          <div class="card-actions justify-center">
+            <button class="btn btn-primary">calculate</button>
+          </div>
+        </div>
+      </div>
+      <!-- 1st card end -->
+      <!-- 2nd card start -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
+        <div class="card-body text-center">
+          <h2 class="text-center text-2xl font-bold">Rectangle</h2>
+          <p>Area (A) = w * I</p>
+          <p>
+            <input class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="w">
+            <span class="mr-2">cm</span>
+            <input class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="l">
+            <span>cm</span>
+          </p>
+          <div class="card-actions justify-center">
+            <button class="btn btn-primary">calculate</button>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd card end -->
+      <!-- 3rd card start -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
+        <div class="card-body text-center">
+          <h2 class="text-center text-2xl font-bold">Parallelogram</h2>
+          <p>Area (A) = b * h</p>
+          <p>
+            <input class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="b">
+            <span class="mr-2">cm</span>
+            <input class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="h">
+            <span>cm</span>
+          </p>
+          <div class="card-actions justify-center">
+            <button class="btn btn-primary">calculate</button>
+          </div>
+        </div>
+      </div>
+      <!-- 3rd card end -->
+    </div>
+    <!-- 2nd part -->
+    <div>
+      <h2>Area Calculation</h2>
+    </div>
+    </div>
+  </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
