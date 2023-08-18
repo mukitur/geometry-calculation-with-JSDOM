@@ -24,13 +24,14 @@
           <h2 class="text-center text-2xl font-bold">Triangle</h2>
           <p>Area (A) = 0.5 * b * h</p>
           <p>
-            <input class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="b">
+            <input id="triangle-base-input" class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="b">
             <span class="mr-2">cm</span>
-            <input class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="h">
+            <input id="triangle-height-input" class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="h">
             <span>cm</span>
           </p>
+          <h3>Area: <span id="tri-area">0</span> cm<sup>2</sup></h3>
           <div class="card-actions justify-center">
-            <button class="btn btn-primary">calculate</button>
+            <button onclick="calculateTriangleArea()" class="btn btn-primary">calculate</button>
           </div>
         </div>
       </div>
@@ -42,13 +43,14 @@
           <h2 class="text-center text-2xl font-bold">Rectangle</h2>
           <p>Area (A) = w * I</p>
           <p>
-            <input class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="w">
+            <input id="rect-width" class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="w">
             <span class="mr-2">cm</span>
-            <input class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="l">
+            <input id="rect-length" class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="l">
             <span>cm</span>
           </p>
+          <h3>Area: <span id="rect-area">0</span> cm<sup>2</sup></h3>
           <div class="card-actions justify-center">
-            <button class="btn btn-primary">calculate</button>
+            <button onclick="calculateRectArea()" class="btn btn-primary">calculate</button>
           </div>
         </div>
       </div>
@@ -60,13 +62,14 @@
           <h2 class="text-center text-2xl font-bold">Parallelogram</h2>
           <p>Area (A) = b * h</p>
           <p>
-            <input class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="b">
+            <input id="parall-base" class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="b">
             <span class="mr-2">cm</span>
-            <input class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="h">
+            <input id="parall-height" class="w-1/4 rounded-md bg-gray-200 pl-2" type="text" placeholder="h">
             <span>cm</span>
           </p>
+          <h3>Area: <span id="parall-area">0</span> cm<sup>2</sup></h3>
           <div class="card-actions justify-center">
-            <button class="btn btn-primary">calculate</button>
+            <button onclick="calculateParallelogram()" class="btn btn-primary">calculate</button>
           </div>
         </div>
       </div>
